@@ -1,0 +1,17 @@
+<div class="card mb-2 text-center bg-dark">
+  <!-- TODO: Crear Imagenes de Gifs -->
+  <shared-lazy-image
+    [url]="gif.images.original.url"
+    [alt]="gif.title || 'No Name'"
+  ></shared-lazy-image>
+  <!-- <img
+    [src]="gif.images.original.url"
+    [alt]="gif.title"
+    class="card-img-top"
+  > -->
+  <div class="card-body">
+    <p class="card-text text-white">
+      {{ gif.title || 'No title' }}
+    </p>
+  </div>
+</div>
